@@ -1,0 +1,95 @@
+@import "../../App";
+
+#all {
+  margin: 0 auto;
+}
+
+#top-nav {
+  width: 80vw;
+  height: 6vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  user-select: none;
+  color: $fontColor;
+
+  .logo {
+    width: 10%;
+    border: $border;
+  }
+
+  .nav-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+  }
+
+  .login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+  }
+
+  .language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+  }
+
+  .nav-button {
+    cursor: pointer;
+  }
+
+  .nav-button:hover {
+    color: rgb(236, 64, 122);
+  }
+}
+
+/* BottomFooter.css */
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.bottom-left {
+  flex: 1;
+}
+
+.bottom-left p {
+  margin: 5px 0;
+}
+
+.bottom-left a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bottom-left a:hover {
+  text-decoration: underline;
+}
+
+.bottom-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-right img {
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
+}
+
+
+#main {
+  width: 80vw;
+  margin: 0 auto;
+}

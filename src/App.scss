@@ -1,0 +1,38 @@
+$colors:(
+        'White': rgb(255,255,255),
+        'Pink': rgb(236,64,122),
+        'Purple': rgb(171,71,188),
+        'DeepPurple': rgb(126,87,194),
+        'Indigo': rgb(92,107,192),
+        'Blue': rgb(66,165,245),
+        'LightBlue': rgb(41,182,246),
+        'Cyan': rgb(38,198,218),
+        'Teal': rgb(38,166,154),
+        'Green': rgb(102,187,106),
+        'lightGreen': rgb(156,204,101),
+        'Lime': rgb(212,225,87),
+        'Yellow': rgb(255,238,88),
+        'Amber': rgb(255,202,40),
+        'Orange': rgb(255,167,38),
+        'DeepOrange': rgb(255,112,67)
+);
+$borderColor: rgb(214, 215, 218);
+$fontColor: rgb(156, 156, 156);
+$border: 1px solid $borderColor;
+$boxShadow: 0 6px 8px 0 rgba(0,0,0,0.3), 0 10px 20px 0 rgba(0,0,0,0.3);
+
+@each $colorKey, $color in $colors {
+  .text-#{$colorKey} {
+    color: $color !important;
+  }
+  .bg-#{$colorKey} {
+    background-color: $color;
+  }
+}
+
+input::-webkit-input-placeholder {
+  /* placeholder颜色 */
+  color: #aab2bd;
+  /* placeholder字体大小 */
+  font-size: .8rem;
+}
